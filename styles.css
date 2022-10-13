@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: Overpass;
-  font-style: normal;
+  font-style: bold;
   font-weight: 600;
   font-display: swap;
   src: url(./fonts/Overpass-Bold.ttf);
@@ -67,6 +67,14 @@ p {
   margin: 1.5rem;
   background: linear-gradient(var(--DarkBlue), var(--VeryDarkBlue));
 }
+.card2 {
+  background-color: var(--VeryDarkBlue);
+  padding: 1.5rem;
+  max-width: 320px;
+  border-radius: 1.5rem;
+  margin: 1.5rem;
+  background: linear-gradient(var(--DarkBlue), var(--VeryDarkBlue));
+}
 .submitdiv {
   display: grid;
   place-items: center;
@@ -82,4 +90,25 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+#subbutton {
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Overpass, sans-serif;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  transition: box-shadow 0.2s;
+}
+
+#subbutton:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+.ratings button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
