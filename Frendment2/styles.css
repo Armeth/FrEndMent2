@@ -1,0 +1,130 @@
+:root {
+  --Black: hsl(0, 0%, 0%);
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Font: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--Black);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: var(--Font);
+}
+
+h1 {
+  color: var(--White);
+}
+
+p {
+  color: var(--LightGrey);
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.ratings {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.75rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ratings button {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--DarkBlue);
+  color: var(--MediumGrey);
+}
+
+.card {
+  background-color: var(--VeryDarkBlue);
+  padding: 1.5rem;
+  max-width: 320px;
+  border-radius: 1.5rem;
+  margin: 1.5rem;
+  background: linear-gradient(var(--DarkBlue), var(--VeryDarkBlue));
+  opacity: 1;
+}
+
+.card2 {
+  background-color: var(--VeryDarkBlue);
+  padding: 1.5rem;
+  max-width: 320px;
+  border-radius: 1.5rem;
+  margin: 1.5rem;
+  background: linear-gradient(var(--DarkBlue), var(--VeryDarkBlue));
+  opacity: 1;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.submitdiv {
+  display: grid;
+  place-items: center;
+}
+
+.selectedtext {
+  background-color: var(--DarkBlue);
+  border-radius: 2em;
+  display: inline-block;
+  position: center;
+  margin-top: 1.5rem;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  color: var(--Orange);
+}
+
+.ratings button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--White);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#star {
+  border: 10px solid var(--VeryDarkBlue);
+  background-color: var(--VeryDarkBlue);
+  border-radius: 50%;
+}
+
+#thankyou {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin: 1.5rem;
+  color: var(--White);
+}
+
+#subbutton {
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  transition: box-shadow 0.2s;
+  letter-spacing: 0.4vh;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#subbutton:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
