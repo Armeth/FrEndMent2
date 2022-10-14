@@ -1,17 +1,3 @@
-@font-face {
-  font-family: Overpass;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(./font/Overpass-regular.ttf);
-}
-@font-face {
-  font-family: Overpass;
-  font-style: bold;
-  font-weight: 600;
-  font-display: swap;
-  src: url(./fonts/Overpass-Bold.ttf);
-}
 :root {
   --Black: hsl(0, 0%, 0%);
   --Orange: hsl(25, 97%, 53%);
@@ -20,6 +6,7 @@
   --MediumGrey: hsl(216, 12%, 54%);
   --DarkBlue: hsl(213, 19%, 18%);
   --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Font: "Overpass", sans-serif;
 }
 
 body {
@@ -27,17 +14,19 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  font-family: Overpass, sans-serif;
+  font-family: var(--Font);
 }
+
 h1 {
   color: var(--White);
 }
+
 p {
   color: var(--LightGrey);
-  font: Overpass;
   line-height: 1.5rem;
   font-weight: 500;
 }
+
 .ratings {
   width: auto;
   display: flex;
@@ -46,6 +35,7 @@ p {
   margin-left: 0;
   margin-right: 0;
 }
+
 .ratings button {
   border: none;
   border-radius: 50%;
@@ -54,11 +44,7 @@ p {
   background-color: var(--DarkBlue);
   color: var(--MediumGrey);
 }
-#star {
-  border: 10px solid var(--VeryDarkBlue);
-  background-color: var(--VeryDarkBlue);
-  border-radius: 50%;
-}
+
 .card {
   background-color: var(--VeryDarkBlue);
   padding: 1.5rem;
@@ -66,7 +52,9 @@ p {
   border-radius: 1.5rem;
   margin: 1.5rem;
   background: linear-gradient(var(--DarkBlue), var(--VeryDarkBlue));
+  opacity: 1;
 }
+
 .card2 {
   background-color: var(--VeryDarkBlue);
   padding: 1.5rem;
@@ -74,22 +62,51 @@ p {
   border-radius: 1.5rem;
   margin: 1.5rem;
   background: linear-gradient(var(--DarkBlue), var(--VeryDarkBlue));
+  opacity: 1;
+  line-height: 1.5rem;
+  text-align: center;
 }
+
 .submitdiv {
   display: grid;
   place-items: center;
 }
 
-#subbutton {
-  background-color: var(--Orange);
+.selectedtext {
+  background-color: var(--DarkBlue);
+  border-radius: 2em;
+  display: inline-block;
+  position: center;
+  margin-top: 1.5rem;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  color: var(--Orange);
 }
+
+.ratings button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   color: var(--White);
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+#star {
+  border: 10px solid var(--VeryDarkBlue);
+  background-color: var(--VeryDarkBlue);
+  border-radius: 50%;
+}
+
+#thankyou {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin: 1.5rem;
+  color: var(--White);
 }
 
 #subbutton {
@@ -98,17 +115,16 @@ p {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Overpass, sans-serif;
   height: 40px;
   text-align: center;
   width: 100%;
   border: 0;
   transition: box-shadow 0.2s;
+  letter-spacing: 0.4vh;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #subbutton:hover {
-  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
-}
-.ratings button:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
