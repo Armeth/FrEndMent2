@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
     />
-
+    <script defer src="app.js"></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
@@ -29,26 +29,26 @@
         appreciated to help us improve our offering!
       </p>
       <div class="ratings">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <button class="ratingbutton">1</button>
+        <button class="ratingbutton">2</button>
+        <button class="ratingbutton">3</button>
+        <button class="ratingbutton">4</button>
+        <button class="ratingbutton">5</button>
       </div>
       <div class="submitdiv">
-        <button type="button" id="subbutton">Submit</button>
+        <button type="button" class="subbutton">Submit</button>
       </div>
     </div>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="card2">
+    <div class="card2 hidden">
       <div>
         <img id="thankspic" src="images/illustration-thank-you.svg" />
       </div>
       <div class="selectedtext">
-        You selected <span class="chosenrating">0 </span>out of 5
+        You selected <span class="chosenrating">0</span> out of 5
       </div>
       <div id="thankyou">Thank you!</div>
       <p id="thankyoutext">
