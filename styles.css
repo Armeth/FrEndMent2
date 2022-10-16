@@ -27,6 +27,10 @@ p {
   font-weight: 500;
 }
 
+.hidden {
+  display: none;
+}
+
 .ratings {
   width: auto;
   display: flex;
@@ -83,7 +87,14 @@ p {
 }
 
 .ratings button:hover {
-  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+  box-shadow: 0 0 10px 4px var(--Orange);
+  background-color: var(--LightGrey);
+  color: var(--VeryDarkBlue);
+}
+
+.ratings button:focus {
+  background-color: var(--Orange);
+  color: var(--White);
 }
 
 .attribution {
@@ -109,7 +120,7 @@ p {
   color: var(--White);
 }
 
-#subbutton {
+.subbutton {
   background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
   border-radius: 20px;
   color: #ffffff;
@@ -125,6 +136,6 @@ p {
   font-weight: bold;
 }
 
-#subbutton:hover {
+.subbutton:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
